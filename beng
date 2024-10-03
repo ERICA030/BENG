@@ -77,14 +77,14 @@
             const pName = document.getElementById('pName').value;
             const pPrice = parseFloat(document.getElementById('pPrice').value);
             const disc = document.getElementById('disc').value;
-            const discountCode = 'GUINTO'; // valid discount code
-            const percentage = 0.1; // 10% discount
+            const discountCode = 'GUINTO';
+            const percentage = 0.1;
 
             let total;
             
             if (discounted == "yes") {
                 if (disc === discountCode) {
-                    const discountAmount = pPrice * percentage; // Calculate discount amount
+                    const discountAmount = pPrice * percentage;
                     total = pPrice - discountAmount; // Calculate total after discount
                     document.getElementById('res').innerHTML = "Name: " + name;
                     document.getElementById('res').innerHTML += "<br>Product Name: " + pName;
@@ -93,7 +93,7 @@
                     document.getElementById('res').innerHTML += "<br>Discount Amount: $" + discountAmount.toFixed(2);
                     document.getElementById('res').innerHTML += "<br>Total Cost: $" + total.toFixed(2);
                 } else {
-                    total = pPrice; // No discount applied
+                    total = pPrice;
                     document.getElementById('res').innerHTML = "Name: " + name;
                     document.getElementById('res').innerHTML += "<br>Product Name: " + pName;
                     document.getElementById('res').innerHTML += "<br>Product Price: $" + pPrice.toFixed(2);
@@ -101,7 +101,7 @@
                     document.getElementById('res').innerHTML += "<br>Total Cost: $" + total.toFixed(2);
                 }
             } else {
-                total = pPrice; // No discount applied
+                total = pPrice;
                 document.getElementById('res').innerHTML = "Name: " + name;
                 document.getElementById('res').innerHTML += "<br>Product Name: " + pName;
                 document.getElementById('res').innerHTML += "<br>Product Price: $" + pPrice.toFixed(2);
