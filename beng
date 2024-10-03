@@ -85,7 +85,7 @@
             if (discounted == "yes") {
                 if (disc === discountCode) {
                     const discountAmount = pPrice * percentage;
-                    total = pPrice - discountAmount; // Calculate total after discount
+                    total = pPrice - discountAmount;
                     document.getElementById('res').innerHTML = "Name: " + name;
                     document.getElementById('res').innerHTML += "<br>Product Name: " + pName;
                     document.getElementById('res').innerHTML += "<br>Product Price: $" + pPrice.toFixed(2);
